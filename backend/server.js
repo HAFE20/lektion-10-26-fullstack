@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 
-const PORT = 1337  // Obs! Fungerar bara lokalt!
+const PORT = process.env.PORT || 1337
 
 // Middleware - TODO
 // Exempel: static folders, logger, CORS
