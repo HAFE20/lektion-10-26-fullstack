@@ -1,10 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 
 const PORT = 1337  // Obs! Fungerar bara lokalt!
 
 // Middleware - TODO
-// Exempel: static folders, logger
+// Exempel: static folders, logger, CORS
+app.use(cors())
 
 // Endpoints
 // app.use om vi har en separat router-fil
