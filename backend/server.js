@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 1337
 // Middleware - TODO
 // Exempel: static folders, logger, CORS
 app.use(cors())
-app.use( express.static(__dirname + '/build') )
+app.use( express.static(__dirname + '/../build') )
 
 // Endpoints
 // app.use om vi har en separat router-fil
@@ -22,7 +22,7 @@ app.get('/animals', (req, res) => {
 
 // Behövs om man använder React Router
 app.get('*', (req, res) => {
-	res.send(__dirname + '/build/index.html')
+	res.sendFile(__dirname + '/build/index.html')
 })
 
 app.listen(PORT, () => {
