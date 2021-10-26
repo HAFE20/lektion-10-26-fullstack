@@ -1,4 +1,4 @@
-import React from 'react';
+import AnimalList from './components/animals/AnimalList'
 import './App.css';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
 		</header>
 		<main>
 			TODO: switch components
+			<AnimalList />
 		</main>
 		</div>
 	);
