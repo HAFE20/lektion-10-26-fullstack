@@ -21,8 +21,7 @@ const AnimalList = () => {
 }
 
 async function sendRequest(saveData: any) {
-	const baseUrl = 'http://localhost:1337'
-	const response = await fetch(baseUrl + '/animals')
+	const response = await fetch('/animals')
 	const data = await response.json()
 	saveData(data)
 }
